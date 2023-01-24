@@ -17,7 +17,7 @@ for(let z = 1; z <= 10; z++) {
             console.log(salida);
         
 
-        fs.writeFile( `tabla-${multiplo}.txt`, salida, (err) => {
+        fs.writeFile( `/log/tabla-${multiplo}.txt`, salida, (err) => {
             if(err) throw err;
             console.log("Documento Creado!");
         });
